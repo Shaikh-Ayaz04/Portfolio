@@ -57,7 +57,7 @@ const Navbar = () => {
             offset={-80}
             onClick={() => setMenu('services')}
           >
-            Services
+            Education
           </Link>
           {menu === 'services' && <img src={underline} alt="" />}
         </li>
@@ -70,7 +70,7 @@ const Navbar = () => {
             offset={-80}
             onClick={() => setMenu('work')}
           >
-            Portfolio
+            Projects
           </Link>
           {menu === 'work' && <img src={underline} alt="" />}
         </li>
