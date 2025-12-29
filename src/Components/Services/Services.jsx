@@ -1,30 +1,51 @@
 import React from 'react'
-import './Services.css'
+import './Education.css'
 import theme_pattern from '../../Assets/theme_pattern.svg'
-import Services_Data from '../../assets/services_Data'
-import arrow_icon from '../../Assets/arrow_icon.svg'
+import Education_Data from '../../assets/eduction_data.js'
+import Experience_Data from '../../assets/Experience_data.js'
+
 
 const Services = () => {
   return (
-    <div id='services' className='services'>
+    <div id='services' className='education'>
         <div className="services-title">
             <h1>Education</h1>
             <img src={theme_pattern} alt="" />
         </div>
         <div className="services-container">
 
-            {Services_Data.map((service, index)=>{
-                return <div key={index} className='services-format'>
-                    <h3>{service.s_no}</h3>
-                    <h2>{service.s_name}</h2>
-                    <p>{service.s_desc}</p>
-                    <div className="services-readmore">
-                        <p>Read More</p>
-                        <img src={arrow_icon} alt="" />
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title"> Education </h3>
+                    <div class="education-box">
+                        {Education_Data.map((edu, index) => (
+                            <div class="education-content" key={index}>
+                                <div class="content">
+                                    <div class="year"> {edu.Year} | {edu.Degree} </div>
+                                    <h3>{edu.Institution_Name}</h3>
+                                    <p>{edu.description}</p>
+                                    <div class="year"> Percentage : {edu.Percentage}</div>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
-            })}
-
+                <div class="education-column">
+                    <h3 class="title"> Experience </h3>
+                    <div class="education-box">
+                        {Experience_Data.map((exp, index) => (
+                            <div class="education-content" key={index}>
+                                <div class="content">
+                                    <div class="year">{exp.role}</div>
+                                    <h3>{exp.company}</h3>
+                                    <p>{exp.description}</p>
+                                    <h3 className="year">{exp.duration}</h3>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   )
