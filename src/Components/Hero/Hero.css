@@ -52,6 +52,10 @@
     border: 2px solid #FFF;
     cursor: pointer;
 }
+.hero-resume a{
+    text-decoration: none;
+    color: #FFF;
+}
 .hero-resume:hover{
     border-color: #B415FF;
 }

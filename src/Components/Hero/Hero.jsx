@@ -6,7 +6,7 @@ import { Link } from 'react-scroll'
 const Hero = () => {
   return (
     <div id='home' className='hero'>
-      <img src={profile_img} alt="Profile" className='profile-img'/>
+      <img src={profile_img} alt="Profile" className='profile-img' />
       <h1> <span>I'm Ayaz Shaikh,</span> MERN Stack Developer</h1>
       <p>💻Turning ideas into scalable, real-world web apps 🚀✨</p>
       <div className="hero-action">
@@ -19,8 +19,16 @@ const Hero = () => {
           >
             Connect With Me
           </Link>
-          </div>
-        <div className="hero-resume">My Resume</div>
+        </div>
+        <div className="hero-resume" onClick={() => {
+          const link = document.createElement('a')
+          link.href = '/Resume.pdf'
+          link.download = 'Resume.pdf'
+          document.body.appendChild(link)
+          link.click()
+          document.body.removeChild(link)
+        }}
+        >My Resume</div>
       </div>
     </div>
 
