@@ -4,11 +4,66 @@
     flex-direction: column;
     gap: 20px;
 }
-.profile-img {
-    margin-top: 30px;
-    width: 240px;
-    border-radius: 50%;
+.profile-wrapper {
+  margin-top: 30px;
+  width: 240px;
+  height: 240px;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+/* Profile Image */
+.profile-img {
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  object-fit: cover;
+  z-index: 2;
+  transition: transform 0.5s ease; /* smooth zoom */
+}
+
+/* Zoom on hover */
+.profile-wrapper:hover .profile-img {
+  transform: scale(1.08); /* small zoom */
+}
+
+/* Rotating gradient glow */
+.profile-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 320px;
+  /* background: linear-gradient(#ff2288, #387ef0); */
+      background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+
+  animation: rotateGlow 8s linear infinite;
+}
+
+/* Dark blur overlay */
+.profile-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  background: #171717;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Animation */
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 
 .hero h1{
     text-align: center;
