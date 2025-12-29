@@ -42,25 +42,40 @@ const About = () => {
                             <hr style={{ width: "50%" }} />
                         </div>
                     </div>
+
                 </div>
 
             </div>
-            <div className="about-achievements">
-                <div className="about-achievement">
-                    <h1>5+</h1>
-                    <p>Projects Completed</p>
-                </div>
-                <hr />
-                <div className="about-achievement">
-                    <h1>10+</h1>
-                    <p>Certificate Completed</p>
-                </div>
-                <hr />
-                <div className="about-achievement">
-                    <h1>4+</h1>
-                    <p>Programming Lang</p>
+            <div class="marquee">
+                <div class="marquee__inner">
+                    <div class="marquee__group">
+                        <span>HTML</span>
+                        <span>tailwind-CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>Mongo DB</span>
+                        <span>MySQL</span>
+                        <span>NLP</span>
+                        <span>AI</span>
+                    </div>
+
+                    <div class="marquee__group">
+                        <span>HTML</span>
+                        <span>tailwind-CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Python</span>
+                        <span>Mongo DB</span>
+                        <span>MySQL</span>
+                        <span>NLP</span>
+                        <span>AI</span>
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }
