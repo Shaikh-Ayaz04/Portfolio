@@ -44,7 +44,7 @@
 }
 
 .education-box {
-    border-left: .2rem solid #ff00ff;
+    border-left: .2rem solid #ff00ff8e;
 }
 
 .education-box .education-content {
@@ -136,6 +136,7 @@ i {
     .education {
         width: 100%;
         /* padding-bottom: 5rem; */
+        align-items: start;
     }
 
     .education-column .title {

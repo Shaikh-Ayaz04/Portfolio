@@ -24,36 +24,6 @@
     gap: 15px;
 }
 
-.footer-email-input {
-    display: flex;
-    gap: 20px;
-    padding: 15px 20px;
-    border-radius: 50px;
-    background: #32323B;
-}
-
-.footer-email-input img {
-    width: 22px;
-}
-
-.footer-email-input input {
-    outline: none;
-    border: none;
-    background: transparent;
-    color: #a0a0a0;
-    font-family: Outfit;
-    font-size: 18px;
-}
-
-.footer-subscribe {
-    font-size: 16px;
-    padding: 18px 40px;
-    border-radius: 50px;
-    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
-    cursor: pointer;
-    transition: .3s
-}
-
 .footer-bottom {
     display: flex;
     justify-content: space-between;
@@ -66,15 +36,94 @@
     margin-bottom: 10px;
 }
 
-.footer-email-input:hover {
-    border: 2px solid white;
-}
+.social-buttons1 {
+        padding: 5px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-.footer-subscribe:hover {
-    transform: scale(1.1);
-    transition: 0.3s;
-}
 
+    }
+
+    .social-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        margin: 0 5px;
+        background-color: #fff;
+        box-shadow: 0px 0px 4px #00000027;
+        transition: 0.3s;
+    }
+
+    .social-button:hover {
+        background-color: #f2f2f2;
+        box-shadow: 0px 0px 6px 3px #00000027;
+    }
+
+    .social-buttons1 svg {
+        transition: 0.3s;
+        height: 20px;
+    }
+
+    .github {
+        background-color: #333;
+    }
+
+    .facebook {
+        background-color: #3b5998;
+    }
+
+    .facebook svg {
+        fill: #f2f2f2;
+    }
+
+    .facebook:hover svg {
+        fill: #3b5998;
+    }
+
+    .github svg {
+        width: 25px;
+        height: 25px;
+        fill: #f2f2f2;
+    }
+
+    .github:hover svg {
+        fill: #333;
+    }
+
+    .linkedin {
+        background-color: #0077b5;
+    }
+
+    .linkedin svg {
+        fill: #f2f2f2;
+    }
+
+    .linkedin:hover svg {
+        fill: #0077b5;
+    }
+
+    .instagram {
+        background-color: #c13584;
+    }
+
+    .instagram svg {
+        fill: #f2f2f2;
+    }
+
+    .instagram:hover svg {
+        fill: #c13584;
+    }
+
+    .social-buttons1:hover {
+        transform: scale(1.05);
+    }
 
 @media(max-width:768px) {
     .footer {
@@ -82,7 +131,6 @@
     }
 
     .footer-top {
-        flex-direction: column;
         gap: 30px;
     }
 
@@ -90,23 +138,6 @@
         gap: 5px;
     }
 
-    .footer-email-input {
-        padding: 12px 14px;
-        max-width: 200px;
-    }
-
-    .footer-email-input img {
-        display: none;
-    }
-
-    .footer-email-input input {
-        width: 100%;
-        font-size: 16px;
-    }
-    .footer-subscribe {
-        font-size: 14px;
-        padding: 14px 20px;
-    }
 
     .footer-bottom {
         display: flex;

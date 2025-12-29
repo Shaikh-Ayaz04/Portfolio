@@ -149,12 +149,9 @@
         font-size: 16px;
         line-height: 25px;
     }
-    /* .contact-details{
-        flex-direction: row;
-        justify-content: space-between;
-    } */
+    
     .contact-detail {
-       gap: 12px;
+        gap: 12px;
     }
 
     .contact-detail img {

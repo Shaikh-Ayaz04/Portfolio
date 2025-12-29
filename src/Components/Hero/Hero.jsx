@@ -9,10 +9,11 @@ const Hero = () => {
       <div class="profile-wrapper">
         <img src={profile_img} alt="Profile" className='profile-img' />
       </div>
-      
+
 
       <h1> <span>I'm Ayaz Shaikh,</span> MERN Stack Developer</h1>
       <p>💻Turning ideas into scalable, real-world web apps 🚀✨</p>
+      
       <div className="hero-action">
         <div className="hero-connect">
           <Link
