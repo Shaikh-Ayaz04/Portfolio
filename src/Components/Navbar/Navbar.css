@@ -139,9 +139,9 @@
         margin: 20px 6%;
     }
 
-    .nav-connect {
-        display: none;
-    }
+    .social-buttons {
+    display: none;
+  }
 
     .nav-mob-open {
         display: block;
