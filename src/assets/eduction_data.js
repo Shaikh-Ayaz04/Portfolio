@@ -1,12 +1,5 @@
 const Education = [
     {
-        Degree: " Class 10th",
-        Institution_Name: "Anglo Urdu Boys High School.",
-        description: "Mathematics, Science, English, Social Studies and Participation in school competitions",
-        Percentage: "84.60%",
-        Year: "2019",
-    },
-    {
         Degree: "Class 12th",
         Institution_Name: "Anglo Urdu Boys High School.",
         description: "Physics, Chemistry, Mathematics and Biology.",
