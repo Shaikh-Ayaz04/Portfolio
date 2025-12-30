@@ -117,7 +117,7 @@
 @media(max-width:768px) {
     .contact {
         gap: 40px;
-        margin: 50px 6%;
+        margin: 100px 6%;
         align-items: start;
     }
 
