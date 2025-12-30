@@ -1,10 +1,10 @@
 import React, { useRef, useState } from 'react'
 import './Navbar.css'
-import logo from '../../Assets/logo.png'
-import underline from '../../Assets/nav_underline.svg'
+import logo from '../../assets/logo.png'
+import underline from '../../assets/nav_underline.svg'
 import { Link } from 'react-scroll'
-import menu_open from '../../Assets/menu_open.svg'
-import menu_close from '../../Assets/menu_close.svg'
+import menu_open from '../../assets/menu_open.svg'
+import menu_close from '../../assets/menu_close.svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState('home')

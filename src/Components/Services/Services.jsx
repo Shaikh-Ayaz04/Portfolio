@@ -1,6 +1,6 @@
 import React from 'react'
 import './Education.css'
-import theme_pattern from '../../Assets/theme_pattern.svg'
+import theme_pattern from '../../assets/theme_pattern.svg'
 import Education_Data from '../../assets/eduction_data.js'
 import Experience_Data from '../../assets/Experience_data.js'
 

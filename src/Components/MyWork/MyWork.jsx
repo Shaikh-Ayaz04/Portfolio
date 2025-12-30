@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import "./MyWork.css";
-import theme_pattern from "../../Assets/theme_pattern.svg";
+import theme_pattern from "../../assets/theme_pattern.svg";
 import mywork_data from "../../assets/Projects/mywork_data.js";
-import arrow_icon from "../../Assets/arrow_icon.svg";
+import arrow_icon from "../../assets/arrow_icon.svg";
 
 const MyWork = () => {
   const sectionRef = useRef(null);

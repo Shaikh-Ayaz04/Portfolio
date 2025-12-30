@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.css'
-import profile_img from '../../Assets/DP.jpg'
+import profile_img from '../../assets/DP.jpg'
 import { Link } from 'react-scroll'
 
 const Hero = () => {
