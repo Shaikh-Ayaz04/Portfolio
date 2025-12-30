@@ -156,7 +156,7 @@ a:-webkit-any-link {
   .mywork {
     margin: 50px 6%;
     gap: 50px;
-    align-items: start;
+    /* align-items: start; */
   }
 
   .mywork-title h1 {
@@ -175,7 +175,7 @@ a:-webkit-any-link {
 
   }
 
-  .icon,
+  /* .icon, */
   .project-title {
     opacity: 1;
     transform: translate(-50%, 0);

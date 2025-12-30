@@ -132,12 +132,16 @@
 
     .footer-top {
         gap: 30px;
+        flex-direction: column;
     }
 
     .footer-top-right {
         gap: 5px;
     }
-
+    .social-buttons1 {
+        align-items: center;
+        width: 100%;
+    }
 
     .footer-bottom {
         display: flex;
